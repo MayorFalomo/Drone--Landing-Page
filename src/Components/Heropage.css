@@ -1,0 +1,211 @@
+.best{
+    display:flex;
+    align-items:center;
+    gap: 1rem;
+    position:relative;
+}
+#dark .flexItem p{
+    color: white;
+}
+.lightening{
+    position: absolute;
+    top:-9px;
+    left:0px;
+}
+
+#dark h1{
+    color:#fff;
+}
+
+.best h2{
+    color:  #475BF7;
+    line-height:30px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-width:400px;
+    margin: auto;
+}
+.play{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    min-width:200px;
+}
+
+.play p{
+    color:#475BF7;
+}
+
+button{
+    background-color: #475BF7;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.faPlay{
+    border-radius: 50%;
+    outline: none;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 15px;
+    font-size:20px;
+}
+.browse{
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    width: 200px;
+    min-width: 150px;
+}
+.Heropage{
+    margin: 40px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    position:relative;
+    width: 90%;
+}
+
+.container{
+    max-width:40%;
+    line-height: 25px;
+        margin:auto;
+}
+
+.imagery img{
+    max-width:500px;
+    transition:all 0.4s ease;
+    animation-name: movingDrone;
+    animation-duration:10s;
+    animation-direction:normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    z-index: 5678967809987698;
+}
+
+@keyframes movingDrone{
+    0%{
+        transform:translate(0, 0);
+    }
+    25%{
+        transform:translate(100px, 40px);
+    }
+    50%{
+        transform:translate(-100px, -40px);
+    }
+    75%{
+        transform:translate(100px, -70px);
+    }
+    100%{
+        transform:translate(0, 0);
+    }
+}
+
+
+.flexItem h1{
+    font-size:48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 59px;
+}
+.flexItem p{
+    font-size:21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+span{
+    color:  #475BF7;
+    position: relative;
+}
+
+.ball{
+    border-radius: 50%;
+    background-color:#FFCC00;
+    width: 21px;
+    height:20px;
+    position: absolute;
+    bottom: 1.7px;
+    left:2px;
+    transition: 0.5s ease;
+}
+
+#dark .ball{
+    background-color: #fff;
+}
+
+.ball.active{
+    transform:translateX(25px);
+    transition: all 0.5s ease;
+}
+.ball.active body{
+    background-color: red;
+}
+
+.toggleContain{
+    border:1px black solid;
+    border-radius:20px;
+    width:50px;
+    height:23px;
+    position:relative;
+    opacity: 0.5;
+}
+#dark .toggleContain{
+    background-color: white;
+}
+
+.toggle{
+    position: relative;
+    transform: rotate(90deg);
+    min-width:50px;
+}
+.toggler{
+    position:absolute;
+    bottom: -50px;
+}
+.togglebtn{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    width: 100%;
+    min-height: 20px;
+}
+
+.med{
+    color:#FFCC00; 
+}
+.contact{
+    display:flex;
+    gap: 1rem;
+}
+
+.socialMedia{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+@media(max-width: 850px){
+    .Heropage{
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content:center;
+        align-items:center
+    }
+    .container{
+        max-width: 80%;
+    }
+}
+
+@media(max-width: 650px){
+    .socialMedia{
+    display: flex;
+    }
+}

@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#light{
+    background-color: #FFFAEC ;
+}
+
+#dark{
+  background-color: #001219;
+}
+body{
+   font-family: "Maven pro";
+  
+}
